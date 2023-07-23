@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservation | Vacant</title>
+    <link rel="stylesheet" href="./css/reservation.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/vacant.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="home.html" id="logo">CMS</a>
+        <ul>
+          <li><a href="announcement.html">Announcement</a></li>
+          <li><a href="reservation.html">Reservation</a></li>
+          <li><a href="download app.html">Download App</a></li>
+          <li><a href="inquiry.html">Inquiry</a></li>
+          <li><a href="#">My Account</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <form enctype="multipart/form-data">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required />
+
+        <label for="dod">Date of Death:</label>
+        <input type="date" id="dod" name="dod" required />
+
+        <label for="death_certificate">Death Certificate (image):</label>
+        <input
+          type="file"
+          id="death_certificate"
+          name="death_certificate"
+          accept="image/*"
+          required
+        />
+
+        <label for="profile_image">Profile Image:</label>
+        <input
+          type="file"
+          id="profile_image"
+          name="profile_image"
+          accept="image/*"
+          required
+        />
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </body>
+</html>
